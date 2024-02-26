@@ -4,9 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffeeBean } from '@fortawesome/pro-solid-svg-icons';
 
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 
 export default function NavigationBar() {
+
+    const [active, setActive] = useState(false);
+
     const pathname = usePathname();
     var navItems = [
         {
@@ -48,11 +52,11 @@ export default function NavigationBar() {
                 <div className="inline-flex mt-1">
                     <a href='/' className=" inline-flex font-bold" > <FontAwesomeIcon icon={faCoffeeBean} className="mr-2 text-2xl"/> Hot Beans</a>
                 </div>
-                <div className="text-center mt-1">
+                <div className="hidden text-center mt-1 lg:visible lg:flex justify-evenly">
                     {
                         navItems.map((item, index) => (
                             <a key={index} href={item.href} className={
-                                (item.isActive() ? 'font-bold' : '') + ' px-3 py-2 mx-2 hover:font-bold hover:bg-[#dfe9e9] rounded-full hover:text-[#191919] transition-all duration-200 ease-in-out' 
+                                (item.isActive() ? 'font-bold' : '') + ' px-3 py-2 mx-2 hover:font-bold hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out' 
                             }>{item.name}</a>
                         ))
                     }

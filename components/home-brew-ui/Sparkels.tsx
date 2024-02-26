@@ -29,7 +29,7 @@ export default function useModeResolver() {
           </h1>
           <TextGenerateEffect
             words="We at Hot Beans are here to allow you to flurish, learn and grow as a developer."
-            className="font-normal relative z-20 "
+            className="font-normal relative z-20 text-center lg:text-left"
           />
         </div>
         <div className="absolute inset-x-40 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-4/4 blur-sm" />
