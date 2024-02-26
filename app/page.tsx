@@ -28,8 +28,10 @@ export default function Home() {
     <>
       <main>
         <SparklesHero/>
-        <div className="py-6 px-6 lg:px-12 lg:py-12 h-[65rem] lg:h-[50rem] dark:bg-[#191919] bg-[#dfe9e9] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex border-neutral-300 dark:border-stone-800 border">
-          <div className="grid grid-cols-2 gap-2 lg:gap-4">
+        <div className="py-6 px-6 lg:px-12 lg:py-12  dark:bg-[#191919] bg-[#dfe9e9] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex border-neutral-300 dark:border-stone-800 border">
+          <div className="relative z-10">
+
+          <div className="grid grid-cols-2 gap-2 lg:gap-x-6 lg:gap-y-4">
             <Card>
               <CardHeader>
                 <CardTitle className="text-base lg:text-2xl"><FontAwesomeIcon icon={faCoffeeBean} className="lg:mr-2" /> Who are we?</CardTitle>
@@ -74,9 +76,11 @@ export default function Home() {
                 </div>
               </CardContent>
             </Card>
-            <Button className=" col-span-2 w-full text-[#191919]">
-              <FontAwesomeIcon icon={faGraduationCap} /> Learn More
+            <Button className="rounded-full col-span-2 w-full text-[#dfe9e9] font-bold dark:text-[#191919]">
+              <FontAwesomeIcon icon={faGraduationCap} className="mr-1"/> Learn More
             </Button>
+          </div>
+
           </div>
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#191919] bg-[#dfe9e9] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         </div>
