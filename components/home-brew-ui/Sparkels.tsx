@@ -22,6 +22,7 @@ export default function useModeResolver() {
             }
           />
         </div>
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#191919] bg-[#dfe9e9] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         <div className="px-12">
           <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center relative z-20">
             Design, <span className="text-green-900 dark:text-green-300">Develop</span>, <span className="text-green-500">Deploy</span>
