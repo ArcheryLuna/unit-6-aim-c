@@ -27,7 +27,7 @@ export default function ShowNotTell() {
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-base lg:text-2xl"><FontAwesomeIcon icon={faCoffeeBean} className="lg:mr-2" /> Who Are We</CardTitle>
-                    <CardDescription className="text-xs lg:text-lg">// Breif Summary</CardDescription>
+                    <CardDescription className="text-xs lg:text-lg">// Brief Summary</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div>
