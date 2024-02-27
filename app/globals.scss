@@ -78,3 +78,26 @@
     @apply bg-background text-foreground;
   }
 }
+
+.underline-hover {
+  color: var(--primary-text-color);
+  
+  display: inline-block;
+  position: relative;
+}
+.underline-hover:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  height: 2px;
+  position: absolute;
+  @apply bg-[#191919] dark:bg-[#dfe9e9];
+  transition: width 0.3s ease 0s, right 0.3s ease 0s;
+  width: 0;
+}
+.underline-hover:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
