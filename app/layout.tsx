@@ -8,6 +8,7 @@ config.autoAddCss = false
 
 import "./globals.scss";
 import NavigationBar from "@/components/home-brew-ui/navbar";
+import Footer from "@/components/home-brew-ui/footer";
 
 
 export default function RootLayout({
@@ -26,6 +27,7 @@ export default function RootLayout({
         >
           <NavigationBar/>
           {children}
+          <Footer/>
         </ThemeProvider>  
       </body>
     </html>

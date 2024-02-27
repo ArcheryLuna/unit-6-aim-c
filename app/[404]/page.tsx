@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   description: "Where developers can find jobs and grow their careers and tallents.",
 };
 
-export default function Home() {
+export default function FourOhFour() {
 
   return (
     <>
-      <main className="py-6 px-6 lg:px-12 lg:py-12  dark:bg-[#191919] bg-[#dfe9e9] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex">
+      <main className="py-6 px-6 lg:px-12 lg:py-12  dark:bg-[#191919] bg-[#dfe9e9] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] h-[92vh] relative flex">
             <div className="grid grid-cols-1 justify-items-center">
                 <div className="">
 
