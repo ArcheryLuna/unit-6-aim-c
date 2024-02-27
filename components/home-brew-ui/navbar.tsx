@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffeeBean, faBarsStaggered, faEnvelope } from '@fortawesome/pro-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import {
     Sheet,
     SheetClose,
@@ -21,6 +21,8 @@ import { Button } from "@/components/ui/button";
 
 
 export default function NavigationBar() {
+
+    const router = useRouter();
 
     const pathname = usePathname();
     var navItems = [
@@ -95,8 +97,8 @@ export default function NavigationBar() {
                             ))} 
                             <li className="px-3 mx-2">
                                 <div className="grid grid-cols-2 gap-2">
-                                    <Button className="rounded-full text-[#dfe9e9] font-bold dark:text-[#191919]"><FontAwesomeIcon icon={faGithub} className="mr-2" /> Github Repo</Button>
-                                    <Button variant={"outline"} className="rounded-full border-[#dfe9e9]"><FontAwesomeIcon icon={faEnvelope} className="mr-2" /> Email us</Button>
+                                    <Button className="rounded-full text-[#dfe9e9] font-bold dark:text-[#191919]"><FontAwesomeIcon icon={faGithub} className="mr-2" onClick={() => router.replace("https://github.com/ArcheryLuna/unit-6-aim-c")}/> Frontend</Button>
+                                    <Button variant={"outline"} className="rounded-full border-[#dfe9e9]" onClick={() => router.replace("https://github.com/ArcheryLuna/cwc-unit6-backend")}><FontAwesomeIcon icon={faGithub} className="mr-2" /> Backend</Button>
                                 </div>
                             </li>   
                         </ul>
