@@ -34,12 +34,12 @@ export default function useModeResolver() {
         </div>
         <div className="absolute inset-x-40 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-4/4 blur-sm" />
         <div className="absolute inset-x-40 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-4/4" />
-        <div className="absolute inset-x-80 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/2 blur-sm" />
-        <div className="absolute inset-x-80 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/2" />
+        <div className="hidden lg:absolute inset-x-80 top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-[5px] w-1/2 blur-sm" />
+        <div className="hidden lg:absolute inset-x-80 top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-px w-1/2" />
         <div className="absolute inset-x-40 bottom-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-4/4 blur-sm" />
         <div className="absolute inset-x-40 bottom-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-4/4" />
-        <div className="absolute inset-x-80 bottom-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-2/4 blur-sm" />
-        <div className="absolute inset-x-80 bottom-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-2/4" />
+        <div className="hidden lg:absolute inset-x-80 bottom-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-[5px] w-2/4 blur-sm" />
+        <div className="hidden lg:absolute inset-x-80 bottom-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-px w-2/4" />
 
       </div>
   )

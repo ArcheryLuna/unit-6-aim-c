@@ -1,21 +1,10 @@
 import Image from "next/image";
 import { Metadata } from "next";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffeeBean, faTerminal, faGraduationCap } from "@fortawesome/pro-solid-svg-icons";
-
 import SparklesHero from "@/components/home-brew-ui/Sparkels";
-import { TracingBeam } from "@/components/ui/tracing-beam";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+import ShowNotTell from "@/components/home-page/show-not-tell";
+import CeoQuote from "@/components/home-page/ceo-quote";
 
-import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Hot Beans | Careers",
@@ -30,57 +19,8 @@ export default function Home() {
         <SparklesHero/>
         <div className="py-6 px-6 lg:px-12 lg:py-12  dark:bg-[#191919] bg-[#dfe9e9] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex border-neutral-300 dark:border-stone-800 border">
           <div className="relative z-10">
-
-          <div className="grid grid-cols-2 gap-2 lg:gap-x-6 lg:gap-y-4">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-base lg:text-2xl"><FontAwesomeIcon icon={faCoffeeBean} className="lg:mr-2" /> Who are we?</CardTitle>
-                <CardDescription className="text-xs lg:text-lg">// Breif Summary</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div>
-                  <p className=" text-xs lg:text-base">Ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nulla molestias deserunt incidunt quae ipsam? Suscipit eum asperiores veritatis modi tenetur sit quod nesciunt nisi, possimus voluptas excepturi ipsum at!</p>
-                </div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-base lg:text-2xl"><FontAwesomeIcon icon={faTerminal} className="mr-2" /> Bleeding Edge</CardTitle>
-                <CardDescription className="text-xs lg:text-lg">// Technically advanced</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div>
-                  <p className=" text-xs lg:text-base">Ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nulla molestias deserunt incidunt quae ipsam? Suscipit eum asperiores veritatis modi tenetur sit quod nesciunt nisi, possimus voluptas excepturi ipsum at!</p>
-                </div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-base lg:text-2xl"><FontAwesomeIcon icon={faCoffeeBean} className="mr-2" /> Who are we?</CardTitle>
-                <CardDescription className="text-xs lg:text-lg">// Breif Summary</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div>
-                  <p className=" text-xs lg:text-base">Ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nulla molestias deserunt incidunt quae ipsam? Suscipit eum asperiores veritatis modi tenetur sit quod nesciunt nisi, possimus voluptas excepturi ipsum at!</p>
-                </div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-base lg:text-2xl"><FontAwesomeIcon icon={faCoffeeBean} className="mr-2" /> Who are we?</CardTitle>
-                <CardDescription className="text-xs lg:text-lg">// Breif Summary</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div>
-                  <p className=" text-xs lg:text-base">Ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nulla molestias deserunt incidunt quae ipsam? Suscipit eum asperiores veritatis modi tenetur sit quod nesciunt nisi, possimus voluptas excepturi ipsum at!</p>
-                </div>
-              </CardContent>
-            </Card>
-            <Button className="rounded-full col-span-2 w-full text-[#dfe9e9] font-bold dark:text-[#191919]">
-              <FontAwesomeIcon icon={faGraduationCap} className="mr-1"/> Learn More
-            </Button>
-          </div>
-
+            <ShowNotTell/>
+            <CeoQuote/>
           </div>
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#191919] bg-[#dfe9e9] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         </div>
