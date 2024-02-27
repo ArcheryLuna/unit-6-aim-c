@@ -28,7 +28,7 @@ export default function useModeResolver() {
             Design, <span className="text-green-900 dark:text-green-300">Develop</span>, <span className="text-green-500">Deploy</span>
           </h1>
           <TextGenerateEffect
-            words="We at Hot Beans are here to allow you to flurish, learn and grow as a developer."
+            words="We at Hot Beans are here to allow you to flourish, learn and grow as a developer."
             className="font-normal relative z-20 text-center lg:text-left"
           />
         </div>
