@@ -62,14 +62,14 @@ export default function NavigationBar() {
     return (
         <nav className="px-12 relative pt-2 pb-4 w-full overflow-hidden">
             <div className="grid mt-3 grid-cols-2 lg:grid-cols-6">
-                <div className="inline-flex mt-1">
-                    <a href='/' className=" inline-flex font-bold" > <FontAwesomeIcon icon={faCoffeeBean} className="mr-2 text-2xl"/> Hot Beans</a>
+                <div className="inline-flex mt-3">
+                    <a href='/' className=" inline-flex font-black" > <FontAwesomeIcon icon={faCoffeeBean} className="mr-2 text-2xl"/> Hot Beans</a>
                 </div>
                 <div className="hidden text-center mt-1 col-span-4 lg:visible lg:flex justify-evenly">
                     {
                         navItems.map((item, index) => (
                             <a key={index} href={item.href} className={
-                                (item.isActive() ? 'font-bold' : '') + ' px-3 py-2 mx-2 hover:font-bold hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out' 
+                                (item.isActive() ? 'font-black' : '') + ' px-3 py-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out' 
                             }>{item.name}</a>
                         ))
                     }
@@ -86,7 +86,7 @@ export default function NavigationBar() {
                         <Separator className="dark:bg-[#dfe9e9] bg-[#191919] my-2"/>
                         <ul className="mt-2">
                             {navItems.map((item, index) => (
-                                <li key={index*2} className="px-3 py-2 my-2 mx-2 hover:font-bold hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out">
+                                <li key={index*2} className="px-3 py-2 my-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out">
                                     <a href={item.href} className={
                                         (item.isActive() ? 'font-bold' : '') + '' 
                                     }>{item.name}</a>
@@ -109,7 +109,9 @@ export default function NavigationBar() {
                 </Sheet>
                 </div>
                 <div className="hidden lg:inline-flex justify-end">
-                    <ModeToggle />
+                    <div className="mt-1">
+                        <ModeToggle />
+                    </div>
                 </div>
             </div>
             <div className="absolute inset-x-40 bottom-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-4/4 blur-sm" />
