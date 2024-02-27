@@ -12,6 +12,7 @@ import {
     AvatarImage,
     AvatarFallback
 } from "@/components/ui/avatar";
+import { Separator } from '../ui/separator';
 
 export default function CeoQuote() {
     return (
@@ -32,8 +33,11 @@ export default function CeoQuote() {
                             <AvatarFallback><FontAwesomeIcon icon={faCoffeeBean} /></AvatarFallback>
                         </Avatar>
                         <div className="space-y-1">
-                            <h4 className="text-sm font-semibold">Felix Harper</h4>
-                            <p className="text-sm">
+                            <h4 className="text-sm font-semibold">Felix Harper
+                                <Separator className='mt-1 dark:bg-[#dfe9e9] bg-[#191919]' decorative={true}/>
+                                <span className='text-muted-foreground'>CEO of Hot Beans</span>
+                            </h4>
+                            <p className="text-sm text-muted-foreground">
                             The Innovator and founder of the Hot Beans corperation.
                             </p>
                             <div className="flex items-center pt-2">
