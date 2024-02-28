@@ -1,7 +1,8 @@
 'use client';
 import { ModeToggle } from "../dark-mode-toggle";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffeeBean, faBarsStaggered, faEnvelope } from '@fortawesome/pro-solid-svg-icons';
+import { faCoffeeBean, faEnvelope } from '@fortawesome/pro-solid-svg-icons';
+import { faBarsStaggered } from '@fortawesome/pro-regular-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import { usePathname, useRouter } from 'next/navigation';

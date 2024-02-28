@@ -11,10 +11,10 @@ export default function useModeResolver() {
     <div className="h-[40rem] relative w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
         <div className="w-full absolute inset-0 h-screen">
           <SparklesCore
-            id="tsparticlesfullpage"
+            id="homepage-Landing"
             background="transparent"
             minSize={0.6}
-            maxSize={1.4}
+            maxSize={2}
             particleDensity={100}
             className="w-full h-full"
             particleColor={
