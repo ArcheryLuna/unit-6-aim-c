@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 import { ModeToggle } from "../dark-mode-toggle";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffeeBean, faCopyright, faGlobeAmericas, faCalendarDay, faHeart, faBowArrow, faChevronRight } from '@fortawesome/pro-solid-svg-icons';
+import { faCoffeeBean, faCopyright, faGlobeAmericas, faCalendarDay, faHeart, faBowArrow, faBookOpen } from '@fortawesome/pro-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import React from 'react';
@@ -74,11 +74,22 @@ export default function NavigationBar() {
                         <FontAwesomeIcon icon={faGlobeAmericas} className="text-2xl lg:text-3xl mr-2"/> Explore</h1>
                     <Separator className="my-2 bg-[#191919] dark:bg-[#dfe9e9]"/>
                     <ul className="mt-2">
+                        <MenuItem href="/" text="Home" suppressHydrationWarning={true}/>
                         <MenuItem href="/about" text="About" suppressHydrationWarning={true}/>
                         <MenuItem href="/team" text="Our Team"  suppressHydrationWarning={true}/>
                         <MenuItem href="/careers" text="Careers"  suppressHydrationWarning={true}/>
                         <MenuItem href="/contact" text="Contact"  suppressHydrationWarning={true}/>
                         <MenuItem href="/resources" text="Resources" suppressHydrationWarning={true}/>
+                    </ul>
+                </div>
+                <div>
+                    <h1 className="text-lg lg:text-2xl font-bold inline-flex">
+                        <FontAwesomeIcon icon={faBookOpen} className="text-2xl lg:text-3xl mr-2"/> Resources</h1>
+                    <Separator className="my-2 bg-[#191919] dark:bg-[#dfe9e9]"/>
+                    <ul className="mt-2">
+                        <MenuItem href="https://github.com/ArcheryLuna/unit-6-aim-c.git" text="Frontend Github" suppressHydrationWarning={true}/>
+                        <MenuItem href="https://github.com/ArcheryLuna/cwc-unit6-backend.git" text="Backend Github"  suppressHydrationWarning={true}/>
+                        <MenuItem href="/resources" text="Resources"  suppressHydrationWarning={true}/>
                     </ul>
                 </div>
             </div>

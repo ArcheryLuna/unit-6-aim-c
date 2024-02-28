@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffeeBean, faTerminal, faGraduationCap, faChevronRight, faGlobeAmericas } from "@fortawesome/pro-solid-svg-icons";
+import { faCoffeeBean, faFire, faGraduationCap, faChevronRight, faGlobeAmericas } from "@fortawesome/pro-solid-svg-icons";
 
 
 export default function ShowNotTell() {
@@ -37,7 +37,7 @@ export default function ShowNotTell() {
                 </Card>
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-base lg:font-black lg:text-2xl"><FontAwesomeIcon icon={faTerminal} className="mr-2 bg-[#191919] rounded-md dark:bg-[#dfe9e9] px-3 py-3 text-[#dfe9e9] dark:text-[#191919]" /> Bleeding Edge</CardTitle>
+                    <CardTitle className="text-base lg:font-black lg:text-2xl"><FontAwesomeIcon icon={faFire} className="mr-2 bg-[#191919] rounded-md dark:bg-[#dfe9e9] px-3 py-3 text-[#dfe9e9] dark:text-[#191919]" /> Bleeding Edge</CardTitle>
                     <CardDescription className="text-xs lg:text-lg">// Technically advanced</CardDescription>
                   </CardHeader>
                   <CardContent>

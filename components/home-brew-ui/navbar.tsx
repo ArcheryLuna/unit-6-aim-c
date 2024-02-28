@@ -28,6 +28,13 @@ export default function NavigationBar() {
     const pathname = usePathname();
     var navItems = [
         {
+            name: "Home",
+            href: "/",
+            isActive: () => {
+                return pathname === '/'
+            }
+        },
+        {
             name: 'About',
             href: '/about',
             isActive: () => {
