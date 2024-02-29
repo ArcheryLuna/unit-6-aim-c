@@ -33,10 +33,13 @@
     "@radix-ui/react-navigation-menu": "^1.1.4",
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
+    "@react-three/drei": "^9.99.4",
+    "@react-three/fiber": "^8.15.16",
     "@tabler/icons-react": "^2.47.0",
     "@tsparticles/engine": "^3.2.2",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.2.2",
+    "@types/three": "^0.161.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.6",
@@ -47,10 +50,12 @@
     "react": "^18",
     "react-dom": "^18",
     "react-element-to-jsx-string": "^15.0.0",
+    "react-three-fiber": "^6.0.13",
     "sass": "^1.71.1",
     "scss": "^0.2.4",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.161.0"
   },
   "devDependencies": {
     "@types/node": "^20",

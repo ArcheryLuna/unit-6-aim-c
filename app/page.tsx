@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import SparklesHero from "@/components/home-brew-ui/Sparkels";
 import ShowNotTell from "@/components/home-page/show-not-tell";
 import CeoQuote from "@/components/home-page/ceo-quote";
-
+import Testimonials from "@/components/home-page/testimonials";
 
 export const metadata: Metadata = {
   title: "Hot Beans | Careers",
@@ -21,6 +21,7 @@ export default function Home() {
           <div className="relative z-10">
             <ShowNotTell/>
             <CeoQuote/>
+            <Testimonials />
           </div>
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#191919] bg-[#dfe9e9] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
         </div>

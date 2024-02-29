@@ -3,8 +3,7 @@
 import dynamic from 'next/dynamic';
 import { ModeToggle } from "../dark-mode-toggle";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffeeBean, faCopyright, faGlobeAmericas, faCalendarDay, faHeart, faBowArrow, faBookOpen } from '@fortawesome/pro-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faCoffeeBean, faCopyright, faGlobeAmericas, faCalendarDay, faHeart, faBowArrow, faBookOpen, faEnvelope } from '@fortawesome/pro-solid-svg-icons';
 
 import React from 'react';
 
@@ -74,12 +73,12 @@ export default function NavigationBar() {
                         <FontAwesomeIcon icon={faGlobeAmericas} className="text-2xl lg:text-3xl mr-2"/> Explore</h1>
                     <Separator className="my-2 bg-[#191919] dark:bg-[#dfe9e9]"/>
                     <ul className="mt-2">
-                        <MenuItem href="/" text="Home" suppressHydrationWarning={true}/>
-                        <MenuItem href="/about" text="About" suppressHydrationWarning={true}/>
-                        <MenuItem href="/team" text="Our Team"  suppressHydrationWarning={true}/>
-                        <MenuItem href="/careers" text="Careers"  suppressHydrationWarning={true}/>
-                        <MenuItem href="/contact" text="Contact"  suppressHydrationWarning={true}/>
-                        <MenuItem href="/resources" text="Resources" suppressHydrationWarning={true}/>
+                        <MenuItem href="/" text="Home" />
+                        <MenuItem href="/about" text="About" />
+                        <MenuItem href="/team" text="Our Team"  />
+                        <MenuItem href="/careers" text="Careers"  />
+                        <MenuItem href="/contact" text="Contact"  />
+                        <MenuItem href="/resources" text="Resources" />
                     </ul>
                 </div>
                 <div>
@@ -87,21 +86,31 @@ export default function NavigationBar() {
                         <FontAwesomeIcon icon={faBookOpen} className="text-2xl lg:text-3xl mr-2"/> Resources</h1>
                     <Separator className="my-2 bg-[#191919] dark:bg-[#dfe9e9]"/>
                     <ul className="mt-2">
-                        <MenuItem href="https://github.com/ArcheryLuna/unit-6-aim-c.git" text="Frontend Github" suppressHydrationWarning={true}/>
-                        <MenuItem href="https://github.com/ArcheryLuna/cwc-unit6-backend.git" text="Backend Github"  suppressHydrationWarning={true}/>
-                        <MenuItem href="/resources" text="Resources"  suppressHydrationWarning={true}/>
+                        <MenuItem href="https://github.com/ArcheryLuna/unit-6-aim-c.git" text="Frontend Github" />
+                        <MenuItem href="https://github.com/ArcheryLuna/cwc-unit6-backend.git" text="Backend Github"  />
+                        <MenuItem href="/resources" text="Resources"  />
+                    </ul>
+                </div>
+                <div>
+                    <h1 className="text-lg lg:text-2xl font-bold inline-flex">
+                        <FontAwesomeIcon icon={faEnvelope} className="text-2xl lg:text-3xl mr-2"/> Contact Us</h1>
+                    <Separator className="my-2 bg-[#191919] dark:bg-[#dfe9e9]"/>
+                    <ul className="mt-2">
+                        <MenuItem href="mailto://me@archery-luna.com" text="me@archery-luna.com" />
+                        <MenuItem href="https://maps.app.goo.gl/e2G3PSAUzdwDBGiv8" text="444 De Haro St Suite 200, San Francisco, CA 94107, United States"  />
+                        <MenuItem href="tel:07718823427" text="+44 (0)7718 823427"  />
                     </ul>
                 </div>
             </div>
 
             {/* The Separator between the content and the footer */}
 
-            <div className="absolute inset-x-40 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-4/4 blur-sm" />
-            <div className="absolute inset-x-40 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-4/4" />
-            <div className="hidden lg:absolute inset-x-80 top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-[5px] w-2/4 blur-sm" />
-            <div className="hidden lg:absolute inset-x-80 top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-px w-2/4" />
+            <div className="absolute  top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full blur-sm" />
+            <div className="absolute  top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-full" />
+            <div className="hidden lg:absolute  top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-[5px] w-1/2 blur-sm" />
+            <div className="hidden lg:absolute  top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-px w-1/2" />
 
-            <div className="relative bottom-0 text-xs lg:text-base justify-items-center px-12 py-6 bg-white dark:bg-black text-[#191919] dark:text-[#dfe9e9] left-0 right-0 grid grid-cols-1 ">
+            <div className="relative bottom-0 text-xs lg:text-base justify-items-center px-12 py-6 bg-white dark:bg-black text-[#191919] dark:text-[#dfe9e9]  right-0 grid grid-cols-1 ">
                 <div className="">
                     <p className="text-black dark:text-white font-black"><FontAwesomeIcon icon={faCopyright} /> 2021 - {new Date().getFullYear()} Hot Beans PLC. All rights reserved.</p>
                 </div>

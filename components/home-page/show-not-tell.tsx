@@ -26,7 +26,7 @@ export default function ShowNotTell() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-x-6 lg:gap-y-4">
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-base lg:font-black lg:text-2xl"><FontAwesomeIcon icon={faCoffeeBean} className="mr-2 bg-[#191919] rounded-md dark:bg-[#dfe9e9] px-3 py-3 text-[#dfe9e9] dark:text-[#191919]" /> Who Are We</CardTitle>
+                    <CardTitle className="text-base lg:font-black lg:text-2xl"><FontAwesomeIcon icon={faCoffeeBean} className="mr-2 bg-[#191919] rounded-md dark:bg-[#dfe9e9] hover:dark:text-yellow-900 hover:text-amber-800 transition-all duration-200 px-3 py-3 text-[#dfe9e9] dark:text-[#191919]" /> Who Are We</CardTitle>
                     <CardDescription className="text-xs lg:text-lg">// Brief Summary</CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -37,7 +37,7 @@ export default function ShowNotTell() {
                 </Card>
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-base lg:font-black lg:text-2xl"><FontAwesomeIcon icon={faFire} className="mr-2 bg-[#191919] rounded-md dark:bg-[#dfe9e9] px-3 py-3 text-[#dfe9e9] dark:text-[#191919]" /> Bleeding Edge</CardTitle>
+                    <CardTitle className="text-base lg:font-black lg:text-2xl"><FontAwesomeIcon icon={faFire} className="mr-2 bg-[#191919] rounded-md dark:bg-[#dfe9e9] px-3 py-3 hover:dark:text-amber-600 hover:text-amber-500 text-[#dfe9e9] dark:text-[#191919]" /> Bleeding Edge</CardTitle>
                     <CardDescription className="text-xs lg:text-lg">// Technically advanced</CardDescription>
                   </CardHeader>
                   <CardContent>
@@ -48,7 +48,7 @@ export default function ShowNotTell() {
                 </Card>
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-base lg:font-black lg:text-2xl"><FontAwesomeIcon icon={faGraduationCap} className="mr-2 bg-[#191919] rounded-md dark:bg-[#dfe9e9] px-3 py-3 text-[#dfe9e9] dark:text-[#191919]" /> Grow Your Skills</CardTitle>
+                    <CardTitle className="text-base lg:font-black lg:text-2xl"><FontAwesomeIcon icon={faGraduationCap} className="mr-2 bg-[#191919] rounded-md dark:bg-[#dfe9e9] px-3 py-3 text-[#dfe9e9] dark:hover:text-sky-500 hover:text-sky-600 dark:text-[#191919]" /> Grow Your Skills</CardTitle>
                     <CardDescription className="text-xs lg:text-lg">// Learn best practices</CardDescription>
                   </CardHeader>
                   <CardContent>
