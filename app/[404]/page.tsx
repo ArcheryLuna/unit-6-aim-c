@@ -15,7 +15,7 @@ export default function FourOhFour() {
       <main className="py-6 px-6 lg:px-12 lg:py-12 font-mono dark:bg-[#191919] bg-[#dfe9e9] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] h-[92vh] relative flex">
             <div className="grid grid-cols-1 relative z-10 place-content-center">
                 <div className=" px-6 py-6 lg:py-12 lg:px-12">
-                  <h1 className="text-2xl font-black">
+                  <h1 className="text-xl lg:text-2xl font-black">
                     404 - Content Not Found
                   </h1>
                   <p>
