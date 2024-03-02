@@ -22,11 +22,10 @@ export default function MenuItemComponent({ href, text }: { href: string, text: 
     };
 
     function Content() {
-      if ( isMounted ) {
         return (
           <AnimatePresence>
             <motion.li
-              initial={{x: -20}}
+              initial={isMounted ? {x: -20} : {x: 0}}
               whileHover={{ x: 0 }}
 
             >
@@ -34,7 +33,7 @@ export default function MenuItemComponent({ href, text }: { href: string, text: 
                 href={href}
                 className="flex items-center text-[#444444] dark:text-[#afafaf] hover:dark:text-[#dfe9e9] hover:text-[#191919]"
                 whileHover="visible"
-                initial="hidden"
+                initial={isMounted ? "hidden" : "visible"}
         
               >
                 <motion.span
@@ -48,7 +47,6 @@ export default function MenuItemComponent({ href, text }: { href: string, text: 
             </motion.li>
           </AnimatePresence>
         )
-      } else return <></>
     }
   
     return (

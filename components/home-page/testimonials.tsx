@@ -23,12 +23,16 @@ export default function Testimonials() {
             title: "Best work place",
             name: "Muhammad Shafi",
             quote: "The company of Hot Beans has been a very comforting experience, it has allows me to be able to grow and learn in my varient field of work, and acquire new skills. "
+        } , {
+            title: "Helped me grow",
+            name: "Meow Cattingson",
+            quote: "Hot Beans Web helped me cultivate my skills from a novice's to a professional's. There is a place for you here, and I found my place here as a Front-End Developer."
         }
     ]
 
     return (
-        <div className=" w-full">
-            <h1 className="text-4xl font-black text-center"><FontAwesomeIcon icon={faHandshake} className='mr-2' />Don't just take our word</h1>     
+        <div className="my-6 lg:my-12 w-full">
+            <h1 className="text-4xl font-black text-center my-6"><FontAwesomeIcon icon={faHandshake} className='mr-2' />Don't just take our word</h1>     
             <InfiniteMovingCards items={testimonials} speed="slow" pauseOnHover={false}/>
         </div>
     )
