@@ -8,6 +8,8 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
+import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
 
 import { Separator } from "@/components/ui/separator";
@@ -59,9 +61,11 @@ export default function ShowNotTell() {
                 </Card>
                 
               </div>
-              <Button className="rounded-full col-span-3 w-full mt-2 mb-2 text-[#dfe9e9] font-bold dark:text-[#191919]">
-                <FontAwesomeIcon icon={faChevronRight} className="mr-1"/> Learn More
-              </Button>
+              <Link href="/about">
+                <Button className="rounded-full col-span-3 w-full mt-2 mb-2 text-[#dfe9e9] font-bold dark:text-[#191919]">
+                  <FontAwesomeIcon icon={faChevronRight} className="mr-1"/> Learn More
+                </Button>
+              </Link>
         </div>
     )
 }

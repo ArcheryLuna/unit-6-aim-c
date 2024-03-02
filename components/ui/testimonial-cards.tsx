@@ -27,7 +27,7 @@ export const TestimonialCards = ({
     return <>
     {
       items.map((item, index) => (
-        <div className="break-inside-avoid-column">
+        <div key={index} className="break-inside-avoid-column">
           <Card key={item.name} className={cn((index > 4 ? "hidden lg:block" : "visible"), className)}>
             <CardHeader>
               <CardTitle className="font-black text-[#191919] dark:text-[#dfe9e9]">{item.title}</CardTitle>

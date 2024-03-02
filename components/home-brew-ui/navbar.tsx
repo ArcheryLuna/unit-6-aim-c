@@ -1,16 +1,15 @@
 'use client';
 import { ModeToggle } from "../dark-mode-toggle";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffeeBean, faEnvelope } from '@fortawesome/pro-solid-svg-icons';
+import { faCoffeeBean } from '@fortawesome/pro-solid-svg-icons';
 import { faBarsStaggered } from '@fortawesome/pro-regular-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import {
     Sheet,
     SheetClose,
     SheetContent,
-    SheetDescription,
     SheetFooter,
     SheetHeader,
     SheetTitle,
@@ -19,11 +18,10 @@ import {
 import { Separator } from "@/components/ui/separator";
 
 import { Button } from "@/components/ui/button";
+import Link from 'next/link';
 
 
 export default function NavigationBar() {
-
-    const router = useRouter();
 
     const pathname = usePathname();
     var navItems = [
@@ -35,7 +33,7 @@ export default function NavigationBar() {
             }
         },
         {
-            name: 'About',
+            name: 'About Us',
             href: '/about',
             isActive: () => {
                 return pathname === '/about'
@@ -67,18 +65,36 @@ export default function NavigationBar() {
         }
     ]
 
+    const LargeDisplayNavbarItems = ({ index, item }: 
+        {index: number, item: { name: string; href: string; isActive: () => boolean; }}) => {
+        return (
+            <Link key={index} href={item.href} className={
+                (item.isActive() ? 'font-black' : '') + ' px-3 py-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out' 
+            }>{item.name}</Link>
+        )
+    }
+
+    const MobileNavbarItems = ({ index, item }: 
+        {index: number, item: { name: string; href: string; isActive: () => boolean; }}) => {
+        return (
+            <li key={index*2} className="px-3 py-2 my-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out">
+                <a href={item.href} className={
+                    (item.isActive() ? 'font-bold' : '') + '' 
+                }>{item.name}</a>
+            </li>
+        )
+    }
+
     return (
         <nav className="px-12 relative pt-2 pb-4 w-full overflow-hidden">
             <div className="grid mt-3 grid-cols-2 lg:grid-cols-6">
                 <div className="inline-flex mt-3">
-                    <a href='/' className=" inline-flex font-black" > <FontAwesomeIcon icon={faCoffeeBean} className="mr-2 text-2xl"/> Hot Beans</a>
+                    <Link href='/' className=" inline-flex font-black" > <FontAwesomeIcon icon={faCoffeeBean} className="mr-2 text-2xl"/> Hot Beans</Link>
                 </div>
                 <div className="hidden text-center mt-1 col-span-4 lg:visible lg:flex justify-evenly">
                     {
                         navItems.map((item, index) => (
-                            <a key={index} href={item.href} className={
-                                (item.isActive() ? 'font-black' : '') + ' px-3 py-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out' 
-                            }>{item.name}</a>
+                            <LargeDisplayNavbarItems index={index} item={item} />
                         ))
                     }
                 </div>
@@ -94,20 +110,19 @@ export default function NavigationBar() {
                         <Separator className="dark:bg-[#dfe9e9] bg-[#191919] my-2"/>
                         <ul className="mt-2">
                             {navItems.map((item, index) => (
-                                <li key={index*2} className="px-3 py-2 my-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out">
-                                    <a href={item.href} className={
-                                        (item.isActive() ? 'font-bold' : '') + '' 
-                                    }>{item.name}</a>
-                                </li>
-
+                                <MobileNavbarItems index={index} item={item} />
                             ))}  
                             
                         </ul>
                         <Separator className="dark:bg-[#dfe9e9] bg[#191919] mb-2"/>
 
                         <div className="grid grid-cols-2 gap-2">
-                            <Button className="rounded-full text-[#dfe9e9] font-bold dark:text-[#191919]"><FontAwesomeIcon icon={faGithub} className="mr-2" onClick={() => router.replace("https://github.com/ArcheryLuna/unit-6-aim-c")}/> Frontend</Button>
-                            <Button variant={"outline"} className="rounded-full border-[#191919] dark:border-[#dfe9e9]" onClick={() => router.replace("https://github.com/ArcheryLuna/cwc-unit6-backend")}><FontAwesomeIcon icon={faGithub} className="mr-2" /> Backend</Button>
+                            <Link href="https://github.com/ArcheryLuna/unit-6-aim-c.git">
+                                <Button className="rounded-full w-full text-[#dfe9e9] font-bold dark:text-[#191919]"><FontAwesomeIcon icon={faGithub} className="mr-2"/> Frontend</Button>
+                            </Link>
+                            <Link href="https://github.com/ArcheryLuna/cwc-unit6-backend.git">
+                                <Button variant={"outline"} className="rounded-full w-full border-[#191919] dark:border-[#dfe9e9]"><FontAwesomeIcon icon={faGithub} className="mr-2" /> Backend</Button>
+                            </Link>
                         </div>
                         
                         <SheetFooter className="absolute bottom-5 right-5">

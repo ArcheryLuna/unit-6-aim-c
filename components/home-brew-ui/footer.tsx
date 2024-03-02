@@ -1,15 +1,12 @@
 "use client";
-import { ModeToggle } from "../dark-mode-toggle";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffeeBean, faCopyright, faGlobeAmericas, faCalendarDay, faHeart, faBowArrow, faBookOpen, faEnvelope } from '@fortawesome/pro-solid-svg-icons';
-
-import {useState, useEffect} from 'react';
 
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 import { Separator } from "@/components/ui/separator";
-import MenuItem from "@/components/ui/footerMenuItem";
+import MenuItem from "@/components/ui/footer-menu-item";
 
 export default function NavigationBar() {
 
