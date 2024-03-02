@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandshake } from "@fortawesome/free-solid-svg-icons";
 
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards"
+import { CarouselCards } from "@/components/ui/infinite-moving-cards"
 
 
 export default function Testimonials() {
@@ -31,9 +31,9 @@ export default function Testimonials() {
     ]
 
     return (
-        <div className="my-6 lg:my-12 w-full">
+        <div className="my-6 lg:my-12 w-full overflow-hidden">
             <h1 className="text-4xl font-black text-center my-6"><FontAwesomeIcon icon={faHandshake} className='mr-2' />Don't just take our word</h1>     
-            <InfiniteMovingCards items={testimonials} speed="slow" pauseOnHover={false}/>
+            <CarouselCards items={testimonials} direction={"right"} speed="slow"/>
         </div>
     )
 }
