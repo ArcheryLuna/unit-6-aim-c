@@ -2,11 +2,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffeeBean, faCopyright, faGlobeAmericas, faCalendarDay, faHeart, faBowArrow, faBookOpen, faEnvelope } from '@fortawesome/pro-solid-svg-icons';
 
+import { faInstagram, faFacebook, faXTwitter, faDiscord, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 import { Separator } from "@/components/ui/separator";
 import MenuItem from "@/components/ui/footer-menu-item";
+
+import Link from 'next/link';
 
 export default function NavigationBar() {
 
@@ -101,6 +105,31 @@ export default function NavigationBar() {
                     <div className="absolute  top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-full" />
                     <div className="hidden lg:absolute  top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-[5px] w-1/2 blur-sm" />
                     <div className="hidden lg:absolute  top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-px w-1/2" />
+                    
+                    <div className="text-xs relative lg:text-base justify-items-center px-12 py-6 bg-neutral-200 dark:bg-neutral-800 text-[#191919] dark:text-[#dfe9e9]  right-0 grid grid-cols-6 justify-evenly">
+                        <Link href="https://instagram.com">
+                            <FontAwesomeIcon icon={faInstagram} className="text-xl lg:text-2xl hover:dark:text-purple-300 hover:text-purple-500 transition-all duration-200" />
+                        </Link>
+                        <Link href="https://facebook.com">
+                            <FontAwesomeIcon icon={faFacebook} className="text-xl lg:text-2xl hover:dark:text-blue-300 hover:text-blue-500 transition-all duration-200" />
+                        </Link>
+                        <Link href="https://twitter.com">
+                            <FontAwesomeIcon icon={faXTwitter} className="text-xl lg:text-2xl hover:text-gray-500 transition-all duration-200" />
+                        </Link>
+                        <Link href="https://linkedin.com">
+                            <FontAwesomeIcon icon={faLinkedin} className="text-xl lg:text-2xl hover:dark:text-sky-300 hover:text-sky-500 transition-all duration-200" />
+                        </Link>
+                        <Link href="https://discord.com/5ReTHMSpFk">
+                            <FontAwesomeIcon icon={faDiscord} className="text-xl lg:text-2xl hover:text-[#5865F2] transition-all duration-200" />
+                        </Link>
+                        <Link href="https://github.com/ArcheryLuna">
+                            <FontAwesomeIcon icon={faGithub} className="text-xl lg:text-2xl hover:text-gray-500 transition-all duration-200" />
+                        </Link>
+                        <div className="absolute  top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full blur-sm" />
+                        <div className="absolute  top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-full" />
+                        <div className="hidden lg:absolute  top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-[5px] w-1/2 blur-sm" />
+                        <div className="hidden lg:absolute  top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-px w-1/2" />
+                    </div>
 
                     <div className="relative bottom-0 text-xs lg:text-base justify-items-center px-12 py-6 bg-white dark:bg-black text-[#191919] dark:text-[#dfe9e9]  right-0 grid grid-cols-1 ">
                         <div className="">

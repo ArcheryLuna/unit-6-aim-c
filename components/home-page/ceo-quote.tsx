@@ -16,7 +16,7 @@ import { Separator } from '../ui/separator';
 
 export default function CeoQuote() {
     return (
-        <div className='my-6 lg:my-12'>
+        <div className='my-6 lg:my-12 py-6 lg:py-12'>
             <FontAwesomeIcon icon={faQuoteLeft} className="text-2xl lg:text-4xl" />
             <h2 className="text-2xl lg:text-3xl font-bold text-center lg:text-left">"
                 At Hot Beans, we're more than a team; we're a family that thrives on creativity and innovation. Our mission is to transform ideas into digital realities that make a difference. We're on the hunt for passionate developers ready to challenge the status quo and elevate their careers. Join us, and together, let's shape the future of technology.
