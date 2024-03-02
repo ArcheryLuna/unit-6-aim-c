@@ -13,11 +13,10 @@ export default function MenuItemComponent({ href, text }: { href: string, text: 
 
     function Content() {
         return (
-          <AnimatePresence>
             <motion.li
               initial={{x: -20}}
               whileHover={{ x: 0 }}
-
+              key={href}
             >
               <motion.a
                 href={href}
@@ -26,16 +25,17 @@ export default function MenuItemComponent({ href, text }: { href: string, text: 
                 initial="hidden"
         
               >
-                <motion.span
-                  variants={iconVariants} // Apply the variants
-                  className="mr-2"
-                >
-                  <FontAwesomeIcon icon={faChevronRight} />
-                </motion.span>
+                <AnimatePresence>
+                  <motion.span
+                    variants={iconVariants} // Apply the variants
+                    className="mr-2"
+                  >
+                    <FontAwesomeIcon icon={faChevronRight} />
+                  </motion.span>
+                </AnimatePresence>
                 {text}
               </motion.a>
             </motion.li>
-          </AnimatePresence>
         )
     }
   

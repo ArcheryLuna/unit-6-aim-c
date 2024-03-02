@@ -12,8 +12,11 @@ import Dynamic from "next/dynamic"
 import "./globals.scss";
 import NavigationBar from "@/components/home-brew-ui/navbar";
 import BackToTop from "@/components/home-brew-ui/back-to-top"
-import Footer from "@/components/home-brew-ui/footer"
 
+
+// const Footer = Dynamic(() => import("@/components/home-brew-ui/footer"), { ssr: false })
+
+import Footer from "@/components/home-brew-ui/footer"
 
 export default function RootLayout({
   children,

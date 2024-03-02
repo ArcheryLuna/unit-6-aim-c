@@ -68,12 +68,12 @@ export default function NavigationBar() {
                                 <FontAwesomeIcon icon={faGlobeAmericas} className="text-2xl lg:text-3xl mr-2"/> Explore</h1>
                             <Separator className="my-2 bg-[#191919] dark:bg-[#dfe9e9]"/>
                             <ul className="mt-2">
-                                <MenuItem href="/" text="Home" />
-                                <MenuItem href="/about" text="About" />
-                                <MenuItem href="/team" text="Our Team"  />
-                                <MenuItem href="/careers" text="Careers"  />
-                                <MenuItem href="/contact" text="Contact"  />
-                                <MenuItem href="/resources" text="Resources" />
+                                <MenuItem href="/" text="Home" uniqueId="HomeFooter"/>
+                                <MenuItem href="/about" text="About" uniqueId="AboutFooter"/>
+                                <MenuItem href="/team" text="Our Team"  uniqueId="TeamFooter"/>
+                                <MenuItem href="/careers" text="Careers" uniqueId="CareersFooter" />
+                                <MenuItem href="/contact" text="Contact" uniqueId="ContactFooter" />
+                                <MenuItem href="/resources" text="Resources" uniqueId="ResourcesFooter" />
                             </ul>
                         </div>
                         <div>
@@ -81,9 +81,9 @@ export default function NavigationBar() {
                                 <FontAwesomeIcon icon={faBookOpen} className="text-2xl lg:text-3xl mr-2"/> Resources</h1>
                             <Separator className="my-2 bg-[#191919] dark:bg-[#dfe9e9]"/>
                             <ul className="mt-2">
-                                <MenuItem href="https://github.com/ArcheryLuna/unit-6-aim-c.git" text="Frontend Github" />
-                                <MenuItem href="https://github.com/ArcheryLuna/cwc-unit6-backend.git" text="Backend Github"  />
-                                <MenuItem href="/resources" text="Resources"  />
+                                <MenuItem href="https://github.com/ArcheryLuna/unit-6-aim-c.git" text="Frontend Github" uniqueId="FrontEndGithubFooter" />
+                                <MenuItem href="https://github.com/ArcheryLuna/cwc-unit6-backend.git" text="Backend Github" uniqueId="BackEndGithubFooter"  />
+                                <MenuItem href="/resources" text="Resources" uniqueId="ResourcesAgainFooter" />
                             </ul>
                         </div>
                         <div>
@@ -91,9 +91,9 @@ export default function NavigationBar() {
                                 <FontAwesomeIcon icon={faEnvelope} className="text-2xl lg:text-3xl mr-2"/> Contact Us</h1>
                             <Separator className="my-2 bg-[#191919] dark:bg-[#dfe9e9]"/>
                             <ul className="mt-2">
-                                <MenuItem href="mailto://me@archery-luna.com" text="me@archery-luna.com" />
-                                <MenuItem href="https://maps.app.goo.gl/e2G3PSAUzdwDBGiv8" text="444 De Haro St Suite 200, San Francisco, CA 94107, United States"  />
-                                <MenuItem href="tel:07718823427" text="+44 (0)7718 823427"  />
+                                <MenuItem href="mailto://me@archery-luna.com" text="me@archery-luna.com" uniqueId="EmailFooter" />
+                                <MenuItem href="https://maps.app.goo.gl/e2G3PSAUzdwDBGiv8" text="444 De Haro St Suite 200, San Francisco, CA 94107, United States" uniqueId="DiscordHQFooter" />
+                                <MenuItem href="tel:07718823427" text="+44 (0)7718 823427" uniqueId="PhoneNumberFooter" />
                             </ul>
                         </div>
                     </div>
@@ -107,7 +107,7 @@ export default function NavigationBar() {
 
                     <div className="relative bottom-0 text-xs lg:text-base justify-items-center px-12 py-6 bg-white dark:bg-black text-[#191919] dark:text-[#dfe9e9]  right-0 grid grid-cols-1 ">
                         <div className="">
-                            <p className="text-black dark:text-white font-black"><FontAwesomeIcon icon={faCopyright} /> 2021 - {new Date().getFullYear()} Hot Beans PLC. All rights reserved.</p>
+                            <p className="text-black dark:text-white font-black"><FontAwesomeIcon icon={faCopyright} /> 2019 - {new Date().getFullYear()} Hot Beans PLC. All rights reserved.</p>
                         </div>
                         
                     </div>
