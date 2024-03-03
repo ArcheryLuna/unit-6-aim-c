@@ -35,7 +35,7 @@ export default function NavigationBar() {
                                 <br/>
                                 <p className="">Made with <FontAwesomeIcon icon={faHeart} className="dark:text-red-300 text-red-500"/> by <HoverCard>
                                         <HoverCardTrigger className='underline-hover hover:font-black transition-all '>
-                                            <a href="https://archery-luna.com"> Archery Luna</a>
+                                            <Link href="https://archery-luna.com"> Archery Luna</Link>
                                         </HoverCardTrigger>
                                         <HoverCardContent className='w-80 ml-4'>
                                             <div className="flex justify-between space-x-4">
@@ -44,7 +44,7 @@ export default function NavigationBar() {
                                                 <AvatarFallback><FontAwesomeIcon icon={faBowArrow} /></AvatarFallback>
                                             </Avatar>
                                             <div className="space-y-1">
-                                                <h4 className="text-sm font-semibold">Archery Luna
+                                                <h4 className="text-sm font-semibold">Archery Luna | 🔗 ArcheryLuna.com
                                                     <Separator className='mt-1 dark:bg-[#dfe9e9] bg-[#191919]' decorative={true}/>
                                                     <span className='text-muted-foreground'>Sebastian Luna</span>
                                                 </h4>
