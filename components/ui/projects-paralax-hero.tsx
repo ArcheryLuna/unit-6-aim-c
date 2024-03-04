@@ -28,7 +28,7 @@ export const HeroParallax = ({
     offset: ["start start", "end start"],
   });
 
-  const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+  const springConfig = { stiffness: 200, damping: 30, bounce: 100 };
 
   const translateX = useSpring(
     useTransform(scrollYProgress, [0, 1], [0, 1000]),
@@ -105,12 +105,12 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        This is who <br /> we are
+        We worked on over <br /> 100+ projects
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
         We are a team of passionate developers, designers, and creators who
         love to build and create amazing things. We are always looking for new
-        challenges and projects to work on. From personal projects to large industry leaders,
+        challenges and projects to work on. From personal passion projects to large industry leaders,
         we are always looking for new opportunities to work on.
       </p>
     </div>

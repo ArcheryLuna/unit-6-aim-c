@@ -33,9 +33,9 @@ export default function NavigationBar() {
                                     Where developers can find jobs that grow their careers and talents within the industry.
                                 </p>
                                 <br/>
-                                <p className="">Made with <FontAwesomeIcon icon={faHeart} className="dark:text-red-300 text-red-500"/> by <HoverCard>
-                                        <HoverCardTrigger className='underline-hover hover:font-black transition-all '>
-                                            <Link href="https://archery-luna.com"> Archery Luna</Link>
+                                <p> Made with <FontAwesomeIcon icon={faHeart} className="dark:text-red-300 text-red-500"/> by <HoverCard>
+                                        <HoverCardTrigger href='https://archery-luna.com' className='underline-hover hover:font-black transition-all '>
+                                            Archery Luna
                                         </HoverCardTrigger>
                                         <HoverCardContent className='w-80 ml-4'>
                                             <div className="flex justify-between space-x-4">
