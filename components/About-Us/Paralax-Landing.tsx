@@ -71,6 +71,9 @@ const HeroParalaxItems =  [
 export default function AboutParalaxLanding() {
 
     return (
-        <HeroParallax products={HeroParalaxItems} />
+        <div className="relative z-10">
+            <HeroParallax products={HeroParalaxItems} />
+        </div>
+        
     );
 }

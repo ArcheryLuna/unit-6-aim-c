@@ -1,4 +1,3 @@
-"use client";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffeeBean, faCopyright, faGlobeAmericas, faCalendarDay, faHeart, faBowArrow, faBookOpen, faEnvelope } from '@fortawesome/pro-solid-svg-icons';
 

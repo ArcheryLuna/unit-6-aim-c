@@ -33,7 +33,7 @@ export default function ShowNotTell() {
                   </CardHeader>
                   <CardContent>
                     <div>
-                      <p className=" text-xs lg:text-base">Ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nulla molestias deserunt incidunt quae ipsam? Suscipit eum asperiores veritatis modi tenetur sit quod nesciunt nisi, possimus voluptas excepturi ipsum at!</p>
+                      <p className=" text-xs lg:text-base">We are a team of passionate developers, designersm and engineers who love to build and create amazing things. We are always looking for new challenges and projects to work on. From personal passion projects to large industry leaderrs, we are always looking for new opportunites to work on.</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -44,7 +44,10 @@ export default function ShowNotTell() {
                   </CardHeader>
                   <CardContent>
                     <div>
-                      <p className=" text-xs lg:text-base">Ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nulla molestias deserunt incidunt quae ipsam? Suscipit eum asperiores veritatis modi tenetur sit quod nesciunt nisi, possimus voluptas excepturi ipsum at!</p>
+                      <p className=" text-xs lg:text-base">
+
+From JavaScript frameworks like Next.js and Angular to building scalable infrastructure for large corporations, we are at the forefront of these technologies, both old and new, always ready to innovate and improve upon ourselves. We pride ourselves on everything from data security to creating stunning websites that leave viewers in awe, consistently pushing the boundaries of what's possible in web development.
+                      </p>
                     </div>
                   </CardContent>
                 </Card>
@@ -55,14 +58,15 @@ export default function ShowNotTell() {
                   </CardHeader>
                   <CardContent>
                     <div>
-                      <p className=" text-xs lg:text-base">Ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus nulla molestias deserunt incidunt quae ipsam? Suscipit eum asperiores veritatis modi tenetur sit quod nesciunt nisi, possimus voluptas excepturi ipsum at!</p>
+                      <p className=" text-xs lg:text-base">
+Elevate your career at Hot Beans, where innovation and growth go hand in hand. Dive into a world of cutting-edge technology, personalized growth paths, and collaborative projects. Benefit from expert mentorship, a flexible work-life balance, and competitive perks. Join us for a transformative journey where your development is our priority. Ready to grow and make an impact? Discover your future with us. </p>
                     </div>
                   </CardContent>
                 </Card>
                 
               </div>
               <Link href="/about">
-                <Button className="rounded-full col-span-3 w-full mt-2 mb-2 text-[#dfe9e9] font-bold dark:text-[#191919]">
+                <Button className="rounded-full col-span-3 w-full mt-4 lg:mt-6 mb-2 text-[#dfe9e9] font-bold dark:text-[#191919]">
                   <FontAwesomeIcon icon={faChevronRight} className="mr-1"/> Learn More
                 </Button>
               </Link>
