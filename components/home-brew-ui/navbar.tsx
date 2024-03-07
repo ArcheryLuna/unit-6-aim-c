@@ -68,7 +68,7 @@ export default function NavigationBar() {
     const LargeDisplayNavbarItems = ({ index, item }: 
         {index: number, item: { name: string; href: string; isActive: () => boolean; }}) => {
         return (
-            <Link key={index} href={item.href} className={
+            <Link key={index} prefetch={true} href={item.href} className={
                 (item.isActive() ? 'font-black' : '') + ' px-3 py-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out' 
             }>{item.name}</Link>
         )

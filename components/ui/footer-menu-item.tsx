@@ -21,9 +21,9 @@ export default function MenuItemComponent({ href, text, uniqueId }: { href: stri
         whileHover={{ x: 0 }}
         key={uniqueId}
       >
-        <Link href={href} className="flex items-center text-[#444444] dark:text-[#afafaf] hover:dark:text-[#dfe9e9] hover:text-[#191919]" >
+        <Link href={href} prefetch={true} className="flex items-center text-[#444444] dark:text-[#afafaf] hover:dark:text-[#dfe9e9] hover:text-[#191919]" >
           <motion.div 
-            className="flex items-center text-[#444444] dark:text-[#afafaf] hover:dark:text-[#dfe9e9] hover:text-[#191919]"
+            className="flex items-center text-[#444444] dark:text-[#afafaf] w-full hover:dark:text-[#dfe9e9] hover:text-[#191919]"
             whileHover="visible"
             initial="hidden"
           >

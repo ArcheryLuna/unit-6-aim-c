@@ -14,9 +14,9 @@ const HeroParalaxItems =  [
         link: "https://vercel.com",
         thumbnail: "/Photos/Vercel-Website.png"
     },{
-        title: "Yakult",
-        link: "https://yakult.com",
-        thumbnail: "/Photos/Yakult-Website.png"
+        title: "The Latin Plaza",
+        link: "https://www.thelatinplaza.co.uk/",
+        thumbnail: "/Photos/The-Latin-Plaza.png"
     },{
         title: "Tidal",
         link: "https://tidal.com",
@@ -34,9 +34,9 @@ const HeroParalaxItems =  [
         link: "https://museos.arteyeducacion.org/en",
         thumbnail: "/Photos/museos-arteyeduction-org.png"
     },{
-        title: "Halvex",
-        link: "https://halvex.org",
-        thumbnail: "/Photos/Halvex.png"
+        title: "Evervault",
+        link: "https://evervault.com",
+        thumbnail: "/Photos/Evervault-Website.png"
     },{
         title: "Luna Cleaning Solutions",
         link: "https://lunacs.co.uk",
@@ -45,27 +45,28 @@ const HeroParalaxItems =  [
         title: "Convoy Panel",
         link: "https://convoypanel.com",
         thumbnail: "/Photos/Convoy-Panel.png"
-    },{
-        title: "Evervault",
-        link: "https://evervault.com",
-        thumbnail: "/Photos/Evervault-Website.png"
+    },
+    {
+        title: "Halvex",
+        link: "https://halvex.net",
+        thumbnail: "/Photos/Halvex.png"
     },{
         title: "MTA",
         link: "https://mta.info",
         thumbnail: "/Photos/MTA-Website.webp"
     },{
-        title: "Bruno Simons Portfolio",
-        link: "https://bruno-simon.com",
-        thumbnail: "/Photos/Bruno-Simons-Portfolio.png"
+        title: "Feeling Stressed",
+        link: "https://media.archery-luna.com",
+        thumbnail: "/Photos/Media-Archery-Luna-com.png"
     },{
         title: "Veilock",
         link: "https://veilock.com/",
         thumbnail: "/Photos/Astro-vpn.png"
     },{
-        title: "Feeling Stressed",
-        link: "https://media.archery-luna.com",
-        thumbnail: "/Photos/Media-Archery-Luna-com.png"
-    }
+        title: "Convoy Panel",
+        link: "https://convoypanel.com",
+        thumbnail: "/Photos/Convoy-Panel.png"
+    },
 ]
 
 export default function AboutParalaxLanding() {

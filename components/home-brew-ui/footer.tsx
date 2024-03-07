@@ -132,8 +132,12 @@ export default function NavigationBar() {
 
                     <div className="relative bottom-0 text-xs lg:text-base justify-items-center px-12 py-6 bg-white dark:bg-black text-[#191919] dark:text-[#dfe9e9]  right-0 grid grid-cols-1 ">
                         <div className="">
-                            <p className="text-black dark:text-white font-black"><FontAwesomeIcon icon={faCopyright} /> 2019 - {new Date().getFullYear()} Hot Beans PLC. All rights reserved.</p>
+                            <p className="text-black dark:text-white font-black"><FontAwesomeIcon icon={faCopyright} /> 2015 - {new Date().getFullYear()} Hot Beans PLC. All rights reserved.</p>
                         </div>
+                        <div className="absolute  top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full blur-sm" />
+                            <div className="absolute  top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-full" />
+                            <div className="hidden lg:absolute  top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-[5px] w-1/2 blur-sm" />
+                            <div className="hidden lg:absolute  top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-px w-1/2" />
                         
                     </div>
                 </footer> 
