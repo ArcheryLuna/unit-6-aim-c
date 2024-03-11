@@ -13,7 +13,7 @@ export default function OhHonestlyDidYouNotReadTheCompanyPolicy() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4 lg:my-6">
                 <Card>
                     <CardHeader>
-                        <CardTitle>
+                        <CardTitle className="font-black">
                             Company Ideals
                         </CardTitle>
                         <CardDescription>
@@ -27,7 +27,7 @@ export default function OhHonestlyDidYouNotReadTheCompanyPolicy() {
                 </Card>
                 <Card>
                     <CardHeader>
-                        <CardTitle>
+                        <CardTitle className="font-black">
                             Company Mission
                         </CardTitle>
                         <CardDescription>
@@ -41,7 +41,7 @@ export default function OhHonestlyDidYouNotReadTheCompanyPolicy() {
                 </Card>
                 <Card>
                     <CardHeader>
-                        <CardTitle>
+                        <CardTitle className="font-black">
                             Join Us
                         </CardTitle>
                         <CardDescription>
@@ -53,7 +53,7 @@ export default function OhHonestlyDidYouNotReadTheCompanyPolicy() {
                     Be part of a team that values growth, exceeds expectations, and aims for global leadership. Your future starts here.
                     </CardContent>
                     <CardFooter>
-                        <Button className="text-[#dfe9e9] dark:text-[#191919] w-full">Join Us</Button>
+                        <Button className="text-[#dfe9e9] dark:text-[#191919] font-bold w-full"><FontAwesomeIcon icon={faChevronRight} className="mx-1"/> Join Us</Button>
                     </CardFooter>
                 </Card>
             </div>

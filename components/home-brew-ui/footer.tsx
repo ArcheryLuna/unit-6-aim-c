@@ -43,7 +43,7 @@ export default function NavigationBar() {
                                                 <AvatarFallback><FontAwesomeIcon icon={faBowArrow} /></AvatarFallback>
                                             </Avatar>
                                             <div className="space-y-1">
-                                                <h4 className="text-sm font-semibold">Archery Luna | 🔗 ArcheryLuna.com
+                                                <h4 className="text-sm font-semibold">Archery Luna
                                                     <Separator className='mt-1 dark:bg-[#dfe9e9] bg-[#191919]' decorative={true}/>
                                                     <span className='text-muted-foreground'>Sebastian Luna</span>
                                                 </h4>

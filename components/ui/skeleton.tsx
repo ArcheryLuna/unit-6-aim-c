@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils"
 
+// Writen on my macbook pro 13 inch m2 2022
+
 function Skeleton({
   className,
   ...props
