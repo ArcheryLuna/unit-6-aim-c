@@ -77,7 +77,7 @@ export default function NavigationBar() {
     const MobileNavbarItems = ({ index, item }: 
         {index: number, item: { name: string; href: string; isActive: () => boolean; }}) => {
         return (
-            <li key={index*2} className="px-3 py-2 my-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out">
+            <li key={index*5} className="px-3 py-2 my-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out">
                 <a href={item.href} className={
                     (item.isActive() ? 'font-bold' : '') + '' 
                 }>{item.name}</a>
