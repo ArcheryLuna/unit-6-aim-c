@@ -20,10 +20,12 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 
+import { useEffect } from 'react';
 
 export default function NavigationBar() {
 
     const pathname = usePathname();
+
     var navItems = [
         {
             name: "Home",
@@ -65,22 +67,24 @@ export default function NavigationBar() {
         }
     ]
 
-    const LargeDisplayNavbarItems = ({ index, item }: 
-        {index: number, item: { name: string; href: string; isActive: () => boolean; }}) => {
+    const LargeDisplayNavbarItems = ({key, item }: 
+        {key: number, item: { name: string; href: string; isActive: () => boolean; }}) => {
         return (
-            <Link key={index} prefetch={true} href={item.href} className={
+            <Link key={key} prefetch={true} href={item.href} className={
                 (item.isActive() ? 'font-black' : '') + ' px-3 py-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out' 
-            }>{item.name}</Link>
+            }>
+                {item.name}
+            </Link>
         )
     }
 
-    const MobileNavbarItems = ({ index, item }: 
-        {index: number, item: { name: string; href: string; isActive: () => boolean; }}) => {
+    const MobileNavbarItems = ({key, item }: 
+        { key: number, item: { name: string; href: string; isActive: () => boolean; }}) => {
         return (
-            <li key={index*5} className="px-3 py-2 my-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out">
-                <a href={item.href} className={
+            <li key={key*2} className="px-3 py-2 my-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out">
+                <Link href={item.href} className={
                     (item.isActive() ? 'font-bold' : '') + '' 
-                }>{item.name}</a>
+                }>{item.name}</Link>
             </li>
         )
     }
@@ -94,7 +98,7 @@ export default function NavigationBar() {
                 <div className="hidden text-center mt-1 col-span-4 lg:visible lg:flex justify-evenly">
                     {
                         navItems.map((item, index) => (
-                            <LargeDisplayNavbarItems index={index} item={item} />
+                            <LargeDisplayNavbarItems key={index} item={item} />
                         ))
                     }
                 </div>
@@ -110,7 +114,7 @@ export default function NavigationBar() {
                         <Separator className="dark:bg-[#dfe9e9] bg-[#191919] my-2"/>
                         <ul className="mt-2">
                             {navItems.map((item, index) => (
-                                <MobileNavbarItems index={index} item={item} />
+                                <MobileNavbarItems key={index} item={item} />
                             ))}  
                             
                         </ul>

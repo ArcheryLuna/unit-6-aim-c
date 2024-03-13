@@ -4,6 +4,7 @@ import AboutParalaxLanding from "@/components/About-Us/Paralax-Landing";
 import AboutShortDesc from "@/components/About-Us/short-description";
 import OhHonestlyDidYouNotReadTheCompanyPolicy from "@/components/About-Us/the-company";
 import MostValuablePeople from "@/components/About-Us/mvps";
+import FrequentlyAskedQuestions from "@/components/About-Us/faq";
 
 export const metadata: Metadata = {
   title: "Hot Beans | About Us",
@@ -20,6 +21,7 @@ export default function About() {
           <div className="px-6 py-6 lg:px-12 lg:py-12">
             <OhHonestlyDidYouNotReadTheCompanyPolicy />
             <MostValuablePeople />
+            <FrequentlyAskedQuestions />
           </div>
         </div>
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-[#191919] bg-[#dfe9e9] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>

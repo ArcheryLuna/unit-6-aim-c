@@ -40,7 +40,9 @@ export default function ShowNotTell() {
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-base lg:font-black lg:text-2xl"><FontAwesomeIcon icon={faFire} className="mr-2 bg-[#191919] rounded-md dark:bg-[#dfe9e9] px-3 py-3 hover:dark:text-amber-600 hover:text-amber-500 transition-all duration-200 text-[#dfe9e9] dark:text-[#191919]" /> Bleeding Edge</CardTitle>
-                    <CardDescription className="text-xs lg:text-lg">// Technically advanced</CardDescription>
+                    <CardDescription className="text-xs lg:text-lg">
+                        {"// Technically advanced"}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div>
