@@ -2,7 +2,15 @@ import { Card, CardHeader, CardFooter, CardContent, CardTitle, CardDescription }
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 
 
-const InvestorsContent = [{
+const InvestorsContent: {
+    id: number,
+    name: string,
+    designation: string,
+    image: string,
+    title: string,
+    description: string,
+    content: string
+    }[] = [{
     id: 1,
     name: "The Primeagen",
     designation: "Senior at netflix",
@@ -22,7 +30,7 @@ const InvestorsContent = [{
     id: 3,
     name: "Jesse Pinkman",
     designation: "Mr. White's Subordanate",
-    imgae: "/Employees/investors/Investor-3.webp",
+    image: "/Employees/investors/Investor-3.webp",
     title: "Yo Mista White",
     description: "Chemist maybe?",
     content: "Jesse Pinkman is a very secritive investor. All we realy know is that he is supporting the project because Walter Hartwel White is a founder."
@@ -30,7 +38,7 @@ const InvestorsContent = [{
     id: 4,
     name: "Eric Wang",
     designation: "Founder of convoypanel",
-    image: "/Employees/investors/investor-4.jpg",
+    image: "/Employees/investors/Eric-Wang.webp",
     title: "Genius",
     description: "Genius, Inovator, and Inventor",
     content: "Eric Wang is a very skilled developer who has created one of the most powerful tools for developers. Convoy Panel is a tool that allows developers to create and manage their own websites with ease."
