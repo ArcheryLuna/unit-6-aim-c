@@ -98,7 +98,9 @@ export default function NavigationBar() {
                 <div className="hidden text-center mt-1 col-span-4 lg:visible lg:flex justify-evenly">
                     {
                         navItems.map((item, index) => (
-                            <LargeDisplayNavbarItems key={index} item={item} />
+                        <div key={index}>
+                            <LargeDisplayNavbarItems key={index*2} item={item} />
+                        </div>
                         ))
                     }
                 </div>

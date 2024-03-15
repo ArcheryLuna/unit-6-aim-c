@@ -34,7 +34,7 @@ export const TestimonialCards = ({
               <CardDescription className="text-gray-600 font-semibold dark:text-gray-400"><FontAwesomeIcon icon={faUser} /> {item.name}</CardDescription>
             </CardHeader>
             <CardContent className="text-gray-800 dark:text-gray-200">
-              <blockquote>"{item.quote}"</blockquote>
+              <blockquote>&quot;{item.quote}&quot;</blockquote>
             </CardContent>
             <CardFooter className="text-gray-600 justify-items-stretch dark:text-gray-400 grid grid-cols-2">
               <div>

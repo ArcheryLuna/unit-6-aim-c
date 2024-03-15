@@ -66,6 +66,11 @@ const Investors = [{
     name: "Mathew Patrick",
     designation: "The Theorist",
     image: "/Employees/investors/Investor-5.jpeg"
+}, {
+    id: 6,
+    name: "Massimo Daccorso",
+    designation: "Literally Him",
+    image: "/Employees/investors/Investor-6.jpeg"
 }];
 const LeadDevelopers = [{
     id: 1,
@@ -157,8 +162,7 @@ export default function MostValuablePeople() {
                     </CardDescription>
                 </CardHeader>
                 <CardContent className="grid grid-cols-1 lg:grid-cols-2">
-                    <div className="flex flomponents/About-Us/mvps.tsx
-./app/about/pagex-row items-center justify-center mb-10 w-full">
+                    <div className="flex flex-row items-center justify-center mb-10 w-full">
                         <AnimatedTooltip items={Investors} />
                     </div>
                     <div className="flex flex-row items-center gap-4 justify-center mb-10 w-full">

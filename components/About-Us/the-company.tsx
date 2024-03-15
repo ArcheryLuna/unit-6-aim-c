@@ -21,7 +21,7 @@ export default function OhHonestlyDidYouNotReadTheCompanyPolicy() {
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
-                    At Hot Beans, we prioritize skill enhancement and client satisfaction. We're dedicated to empowering our employees with continuous learning, ensuring our web development solutions exceed client expectations. 
+                    At Hot Beans, we prioritize skill enhancement and client satisfaction. We&apos;re dedicated to empowering our employees with continuous learning, ensuring our web development solutions exceed client expectations. 
                     Our ethos is built on innovation, collaboration, and crafting websites that not only meet but surpass client visions. Success together is our mantra.
                     </CardContent>
                 </Card>
@@ -49,7 +49,7 @@ export default function OhHonestlyDidYouNotReadTheCompanyPolicy() {
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
-                    Join Hot Beans, where innovation meets ambition. With a mission to revolutionize website development and a commitment to skill enhancement and client satisfaction, we're on the path to an IPO. 
+                    Join Hot Beans, where innovation meets ambition. With a mission to revolutionize website development and a commitment to skill enhancement and client satisfaction, we&apos;re on the path to an IPO. 
                     Be part of a team that values growth, exceeds expectations, and aims for global leadership. Your future starts here.
                     </CardContent>
                     <CardFooter>

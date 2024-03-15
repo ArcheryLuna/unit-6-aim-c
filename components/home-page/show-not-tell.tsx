@@ -29,11 +29,13 @@ export default function ShowNotTell() {
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-base lg:font-black lg:text-2xl"><FontAwesomeIcon icon={faCoffeeBean} className="mr-2 bg-[#191919] rounded-md dark:bg-[#dfe9e9] hover:dark:text-yellow-900 hover:text-amber-800 transition-all duration-200 px-3 py-3 text-[#dfe9e9] dark:text-[#191919]" /> Who Are We</CardTitle>
-                    <CardDescription className="text-xs lg:text-lg">// Brief Summary</CardDescription>
+                    <CardDescription className="text-xs lg:text-lg">
+                        {"// Brief Summary"}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div>
-                      <p className=" text-xs lg:text-base">We are a team of passionate developers, designersm and engineers who love to build and create amazing things. We are always looking for new challenges and projects to work on. From personal passion projects to large industry leaderrs, we are always looking for new opportunites to work on.</p>
+                      <p className=" text-xs lg:text-base">We are a team of passionate developers, designers and engineers who love to build and create amazing things. We are always looking for new challenges and projects to work on. From personal passion projects to large industry leaderrs, we are always looking for new opportunites to work on.</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -48,7 +50,7 @@ export default function ShowNotTell() {
                     <div>
                       <p className=" text-xs lg:text-base">
 
-From JavaScript frameworks like Next.js and Angular to building scalable infrastructure for large corporations, we are at the forefront of these technologies, both old and new, always ready to innovate and improve upon ourselves. We pride ourselves on everything from data security to creating stunning websites that leave viewers in awe, consistently pushing the boundaries of what's possible in web development.
+From JavaScript frameworks like Next.js and Angular to building scalable infrastructure for large corporations, we are at the forefront of these technologies, both old and new, always ready to innovate and improve upon ourselves. We pride ourselves on everything from data security to creating stunning websites that leave viewers in awe, consistently pushing the boundaries of what&apos;s possible in web development.
                       </p>
                     </div>
                   </CardContent>
@@ -56,7 +58,9 @@ From JavaScript frameworks like Next.js and Angular to building scalable infrast
                 <Card>
                   <CardHeader>
                     <CardTitle className="text-base lg:font-black lg:text-2xl"><FontAwesomeIcon icon={faGraduationCap} className="mr-2 bg-[#191919] rounded-md dark:bg-[#dfe9e9] px-3 py-3 text-[#dfe9e9] transition-all duration-200 dark:hover:text-sky-500 hover:text-sky-600 dark:text-[#191919]" /> Grow Your Skills</CardTitle>
-                    <CardDescription className="text-xs lg:text-lg">// Learn best practices</CardDescription>
+                    <CardDescription className="text-xs lg:text-lg">
+                        {"// Learn best practices"}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div>
