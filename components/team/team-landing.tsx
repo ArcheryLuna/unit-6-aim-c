@@ -15,7 +15,7 @@ export default function TeamLanding() {
                         duration: 0.8,
                         ease: "easeInOut",
                     }}
-                    className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+                    className=" bg-gradient-to-br from-slate-300 to-slate-500  bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
                 >
                     Meet the team
                 </motion.h1>
