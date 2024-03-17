@@ -37,6 +37,13 @@ export default function ContactForm() {
         }
 
         toast.success(`Thank you for your message, ${data.FirstName}! We will get back to you soon.`);
+
+        data.FirstName = "";
+        data.LastName = "";
+        data.Email = "";
+        data.Message = "";
+
+        return;
     }
 
     return (

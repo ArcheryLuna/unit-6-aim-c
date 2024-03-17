@@ -27,9 +27,9 @@ const HeroParalaxItems =  [
         position: "Jr. Full-Stack Developer",
         thumbnail: "/Employees/developers/junior-devs/fullstack-dev-1.jpg"
     },{    
-        title: "Ivana Cajina",
+        title: "Alexander Jade Bachini",
         position: "Jr. Frontend Developer",
-        thumbnail: "/Employees/developers/junior-devs/frontend-dev-2.jpg"
+        thumbnail: "/Employees/developers/junior-devs/frontend-dev-2.jpeg"
     },{
         title: "Gpios",
         position: "Jr. Data Analyst",
