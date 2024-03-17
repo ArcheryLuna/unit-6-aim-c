@@ -5,6 +5,8 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 // import Dynamic from "next/dynamic"
 
 import { Toaster } from '@/components/ui/sonner';
@@ -35,7 +37,8 @@ export default function RootLayout({
           <BackToTop/>
           <Toaster/>
           <Footer/>
-        </ThemeProvider>  
+        </ThemeProvider> 
+        <SpeedInsights/>
       </body>
     </html>
   );

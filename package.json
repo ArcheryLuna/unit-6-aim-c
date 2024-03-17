@@ -42,6 +42,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.2.2",
     "@types/three": "^0.161.2",
+    "@vercel/speed-insights": "^1.0.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.14",
