@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationPin, faMoneyCheckDollarPen, faPage, faTerminal, faCircleExclamation, faUser } from "@fortawesome/pro-solid-svg-icons";
+import { faLocationPin, faMoneyCheckDollarPen, faPage, faCircleExclamation, faUser } from "@fortawesome/pro-solid-svg-icons";
 
 import { Separator } from "@/components/ui/separator";
 
@@ -47,8 +47,8 @@ function HandleApply(e: any) {
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 px-6 py-6 lg:px-12 lg:py-12 lg:grid-cols-3 gap-4">
-        <div className="relative">
-            <Card className="overflow-y-scroll h-[50vh] lg:h-[95vh] sticky top-6 hover:cursor-pointer">
+        <div className="relative overflow-x-clip">
+            <Card className="overflow-y-scroll h-[50vh] lg:h-[95vh] lg:sticky top-6 hover:cursor-pointer">
                 <CardHeader>
                     <CardTitle> Listings </CardTitle>
                     <CardDescription> What jobs are available </CardDescription>

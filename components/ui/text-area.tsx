@@ -7,19 +7,20 @@ export interface InputProps
   extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}
 
 const TextArea = React.forwardRef<HTMLTextAreaElement, InputProps>(
-  ({ className, ...props }, ref) => {
-    const radius = 100; // change this to increase the rdaius of the hover effect
+  ({ className, ...props }) => {
+    const radius = 200; // change this to increase the rdaius of the hover effect
     const [visible, setVisible] = React.useState(false);
 
     let mouseX = useMotionValue(0);
     let mouseY = useMotionValue(0);
-
+    
     function handleMouseMove({ currentTarget, clientX, clientY }: any) {
-      let { left, top } = currentTarget.getBoundingClientRect();
+        let { left, top } = currentTarget.getBoundingClientRect();
 
-      mouseX.set(clientX - left);
-      mouseY.set(clientY - top);
+        mouseX.set(clientX - left);
+        mouseY.set(clientY - top);
     }
+
     return (
       <motion.div
         style={{
@@ -47,7 +48,6 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, InputProps>(
            `,
             className
           )}
-          ref={ref}
           {...props}
         />
       </motion.div>

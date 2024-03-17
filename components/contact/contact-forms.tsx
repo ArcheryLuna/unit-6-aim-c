@@ -12,7 +12,33 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
+import { toast } from "sonner";
+
 export default function ContactForm() {
+
+    function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+
+        const FirstName = document.getElementById("FirstName") as HTMLInputElement;
+        const LastName = document.getElementById("LastName") as HTMLInputElement;
+        const Email = document.getElementById("Email") as HTMLInputElement;
+        const Message = document.getElementById("Message") as HTMLTextAreaElement;
+
+        if ( !FirstName.value || !LastName.value || !Email.value || !Message.value ) {
+            toast.error("Please fill in all fields");
+            return;
+        }
+
+        const data = {
+            FirstName: FirstName.value,
+            LastName: LastName.value,
+            Email: Email.value,
+            Message: Message.value
+        }
+
+        toast.success(`Thank you for your message, ${data.FirstName}! We will get back to you soon.`);
+    }
+
     return (
     <div className="grid grid-cols-1 justify-items-center gap-4 px-6 py-6 lg:px-12 lg:py-12">
         <Card className="">

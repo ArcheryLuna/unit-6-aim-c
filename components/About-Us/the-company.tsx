@@ -17,7 +17,7 @@ export default function OhHonestlyDidYouNotReadTheCompanyPolicy() {
                             Company Ideals
                         </CardTitle>
                         <CardDescription>
-                            // What we stand for
+                          { "// What we stand for" }
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -31,7 +31,7 @@ export default function OhHonestlyDidYouNotReadTheCompanyPolicy() {
                             Company Mission
                         </CardTitle>
                         <CardDescription>
-                            // Why we stand for it
+                            { "// Why we stand for it" }
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -45,7 +45,7 @@ export default function OhHonestlyDidYouNotReadTheCompanyPolicy() {
                             Join Us
                         </CardTitle>
                         <CardDescription>
-                            // Join us and our mission
+                            { "// Join us and our mission" }
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
@@ -53,7 +53,7 @@ export default function OhHonestlyDidYouNotReadTheCompanyPolicy() {
                     Be part of a team that values growth, exceeds expectations, and aims for global leadership. Your future starts here.
                     </CardContent>
                     <CardFooter>
-                        <Button className="text-[#dfe9e9] dark:text-[#191919] font-bold w-full"><FontAwesomeIcon icon={faChevronRight} className="mx-1"/> Join Us</Button>
+                        <Button className="text-[#dfe9e9] rounded-full dark:text-[#191919] font-bold w-full"><FontAwesomeIcon icon={faChevronRight} className="mx-1"/> Join Us</Button>
                     </CardFooter>
                 </Card>
             </div>

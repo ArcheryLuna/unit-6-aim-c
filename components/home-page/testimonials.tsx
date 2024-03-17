@@ -97,7 +97,7 @@ export default function Testimonials() {
             <h1 className="text-4xl font-black text-center my-6"><FontAwesomeIcon icon={faHandshake} className='mr-2' />Don&apos;t just take our word</h1>     
             <TestimonialCards items={testimonials}/>
             <Link href="/team">
-                <Button className="w-full mx-auto mt-6 text-[#dfe9e9] dark:text-[#191919] font-semibold"><FontAwesomeIcon icon={faUser} /> Check out our team</Button>
+                <Button className="w-full rounded-full mx-auto mt-6 text-[#dfe9e9] dark:text-[#191919] font-semibold"><FontAwesomeIcon icon={faUser} /> Check out our team</Button>
             </Link>
         </div>
     )

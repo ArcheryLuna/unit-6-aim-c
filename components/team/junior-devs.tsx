@@ -10,9 +10,14 @@ const HeroParalaxItems =  [
         position: "Jr. QA Developer",
         thumbnail: "/Employees/developers/junior-devs/qa-dev-1.jpeg"
     },{
-        title: "George Staley",
+        title: "Eduard Mihai Lefko",
+        position: "Jr. Backend Developer",
+        thumbnail: "/Employees/developers/junior-devs/backend-dev-1.jpeg"
+    },
+    {
+        title: "Wasil Qureshi",
         position: "Jr. Data Analyst",
-        thumbnail: "/Employees/developers/junior-devs/data-analyst-1.jpg"
+        thumbnail: "/Employees/developers/junior-devs/data-analyst-1.jpeg"
     },{
         title: "Mike Erhmentraut",
         position: "Jr. Designer",
@@ -21,11 +26,7 @@ const HeroParalaxItems =  [
         title: "Maria Cervantes",
         position: "Jr. Full-Stack Developer",
         thumbnail: "/Employees/developers/junior-devs/fullstack-dev-1.jpg"
-    },{
-        title: "Eduard Mihai Lefko",
-        position: "Jr. Backend Developer",
-        thumbnail: "/Employees/developers/junior-devs/backend-dev-1.jpeg"
-    },{
+    },{    
         title: "Ivana Cajina",
         position: "Jr. Frontend Developer",
         thumbnail: "/Employees/developers/junior-devs/frontend-dev-2.jpg"

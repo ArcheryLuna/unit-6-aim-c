@@ -225,9 +225,9 @@ export default function MostValuablePeople() {
                     Founders, Investors and the clockwork
                 </h1>
                 <div className="grid grid-cols-3 gap-4">
-                    <Button className={(tab === "founders" ? "bg-stone-300 dark:bg-stone-900" : "text-[#dfe9e9] dark:text-[#191919]")} onClick={() => setTab("founders")}>Founders</Button>
-                    <Button className={(tab === "investors" ? "bg-stone-300 dark:bg-stone-900 " : "text-[#dfe9e9] dark:text-[#191919]")} onClick={() => setTab("investors")}>Investors</Button>
-                    <Button className={(tab === "leadDevelopers" ? "bg-stone-300 dark:bg-stone-900 " : "text-[#dfe9e9] dark:text-[#191919]")} onClick={() => setTab("leadDevelopers")}>Lead Devs</Button>
+                    <Button className={(tab === "founders" ? "bg-stone-300 dark:bg-stone-900" : "text-[#dfe9e9] dark:text-[#191919]") + " rounded-full hover:text-[#dfe9e9]"} onClick={() => setTab("founders")}>Founders</Button>
+                    <Button className={(tab === "investors" ? "bg-stone-300 dark:bg-stone-900 " : "text-[#dfe9e9] dark:text-[#191919]") + " rounded-full hover:text-[#dfe9e9]"} onClick={() => setTab("investors")}>Investors</Button>
+                    <Button className={(tab === "leadDevelopers" ? "bg-stone-300 dark:bg-stone-900 " : "text-[#dfe9e9] dark:text-[#191919]") + " rounded-full hover:text-[#dfe9e9]"} onClick={() => setTab("leadDevelopers")}>Lead Devs</Button>
                 </div>
                 <div className="mt-4 lg:mt-6 relative h-[65vh] lg:h-[27vh]">
                     <AnimatePresence>
@@ -237,7 +237,7 @@ export default function MostValuablePeople() {
                     </AnimatePresence>
                 </div>
                 <Link href="/team">
-                <Button className="w-full text-[#dfe9e9] dark:text-[#191919]">The rest of our team</Button>
+                <Button className="w-full text-[#dfe9e9] dark:text-[#191919] rounded-full">The rest of our team</Button>
                 </Link>
             </div>
         </>
