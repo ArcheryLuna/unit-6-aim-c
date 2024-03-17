@@ -4,12 +4,17 @@ import { Button } from "@/components/ui/button"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/pro-regular-svg-icons'
 
+import Link from 'next/link'
+
 export default function OhHonestlyDidYouNotReadTheCompanyPolicy() {
     return (
         <div>
             <h1 className="text-4xl tracking-tightest font-black">
-                That waves your right to autonomy
+                Our company policy&apos;s
             </h1>
+            <p className="text-muted-foreground">
+                Our morality and our dedication to our mission
+            </p>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4 lg:my-6">
                 <Card>
                     <CardHeader>
@@ -53,7 +58,9 @@ export default function OhHonestlyDidYouNotReadTheCompanyPolicy() {
                     Be part of a team that values growth, exceeds expectations, and aims for global leadership. Your future starts here.
                     </CardContent>
                     <CardFooter>
-                        <Button className="text-[#dfe9e9] rounded-full dark:text-[#191919] font-bold w-full"><FontAwesomeIcon icon={faChevronRight} className="mx-1"/> Join Us</Button>
+                        <Link href="/careers" className="w-full">
+                            <Button className="text-[#dfe9e9] rounded-full dark:text-[#191919] font-bold w-full"><FontAwesomeIcon icon={faChevronRight} className="mx-1"/> Join Us</Button>
+                        </Link>
                     </CardFooter>
                 </Card>
             </div>

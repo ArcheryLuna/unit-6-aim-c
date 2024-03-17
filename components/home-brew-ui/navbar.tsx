@@ -8,7 +8,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { usePathname } from 'next/navigation';
 import {
     Sheet,
-    SheetClose,
     SheetContent,
     SheetFooter,
     SheetHeader,
@@ -19,8 +18,6 @@ import { Separator } from "@/components/ui/separator";
 
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
-
-import { useEffect } from 'react';
 
 export default function NavigationBar() {
 

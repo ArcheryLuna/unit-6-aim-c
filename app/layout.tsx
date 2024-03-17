@@ -1,5 +1,3 @@
-
-// import type { Metadata } from "next";
 import { GeistSans } from 'geist/font/sans';
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider"
@@ -13,7 +11,6 @@ import { Toaster } from '@/components/ui/sonner';
 import "./globals.scss";
 import NavigationBar from "@/components/home-brew-ui/navbar";
 import BackToTop from "@/components/home-brew-ui/back-to-top"
-
 
 // const Footer = Dynamic(() => import("@/components/home-brew-ui/footer"), { ssr: false })
 
