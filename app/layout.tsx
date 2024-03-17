@@ -1,5 +1,5 @@
 
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { GeistSans } from 'geist/font/sans';
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider"
@@ -7,8 +7,9 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
-import Dynamic from "next/dynamic"
+// import Dynamic from "next/dynamic"
 
+import { Toaster } from '@/components/ui/sonner';
 import "./globals.scss";
 import NavigationBar from "@/components/home-brew-ui/navbar";
 import BackToTop from "@/components/home-brew-ui/back-to-top"
@@ -35,6 +36,7 @@ export default function RootLayout({
           <NavigationBar/>
           {children}
           <BackToTop/>
+          <Toaster/>
           <Footer/>
         </ThemeProvider>  
       </body>

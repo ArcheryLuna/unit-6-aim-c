@@ -7,7 +7,7 @@ import CeoQuote from "@/components/home-page/ceo-quote";
 import Testimonials from "@/components/home-page/testimonials";
 
 export const metadata: Metadata = {
-  title: "Hot Beans | Careers",
+  title: "Hot Beans",
   description: "Where developers can find jobs and grow their careers and talents.",
 };
 

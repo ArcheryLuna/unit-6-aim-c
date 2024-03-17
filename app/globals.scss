@@ -74,7 +74,11 @@
   * {
     @apply border-border;
   }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#1e293b] dark:bg-[#dfe9e9] rounded-full;
+  }
   body {
+
     @apply bg-background selection:dark:bg-[#dfe9e9] selection:bg-[#191919] selection:text-background text-foreground;
   }
 }

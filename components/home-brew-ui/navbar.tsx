@@ -67,14 +67,14 @@ export default function NavigationBar() {
         }
     ]
 
-    const LargeDisplayNavbarItems = ({key, item }: 
-        {key: number, item: { name: string; href: string; isActive: () => boolean; }}) => {
+    const LargeDisplayNavbarItems = ({ item }: 
+        {item: { name: string; href: string; isActive: () => boolean; }}) => {
         return (
-            <Link key={key} prefetch={true} href={item.href} className={
-                (item.isActive() ? 'font-black' : '') + ' px-3 py-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out' 
-            }>
-                {item.name}
-            </Link>
+                <Link prefetch={true} href={item.href} className={
+                    (item.isActive() ? 'font-black' : '') + ' px-3 py-2 mx-2 hover:font-black hover:dark:bg-[#dfe9e9] hover:bg-[#191919] hover:text-[#dfe9e9] rounded-full hover:dark:text-[#191919] transition-all duration-200 ease-in-out' 
+                }>
+                    {item.name}
+                </Link>
         )
     }
 
@@ -92,14 +92,14 @@ export default function NavigationBar() {
     return (
         <nav className="px-12 relative pt-2 pb-4 w-full overflow-hidden">
             <div className="grid mt-3 grid-cols-2 lg:grid-cols-6">
-                <div className="inline-flex mt-3">
+                <div className="inline-flex mt-2">
                     <Link href='/' className=" inline-flex font-black" > <FontAwesomeIcon icon={faCoffeeBean} className="mr-2 text-2xl"/> Hot Beans</Link>
                 </div>
-                <div className="hidden text-center mt-1 col-span-4 lg:visible lg:flex justify-evenly">
+                <div className="hidden text-center mt-2 col-span-4 lg:visible lg:flex justify-evenly">
                     {
                         navItems.map((item, index) => (
                         <div key={index}>
-                            <LargeDisplayNavbarItems key={index*2} item={item} />
+                            <LargeDisplayNavbarItems item={item} />
                         </div>
                         ))
                     }
@@ -138,7 +138,7 @@ export default function NavigationBar() {
                 </Sheet>
                 </div>
                 <div className="hidden lg:inline-flex justify-end">
-                    <div className="mt-1">
+                    <div>
                         <ModeToggle />
                     </div>
                 </div>

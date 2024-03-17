@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 
-import { GlobeLanding } from "@/components/careers/careers-landing";
+const CareerListing = dynamic(() => import('@/components/careers/careers-listings'), { ssr: false });
 
 export const metadata: Metadata = {
   title: "Hot Beans | Careers",
@@ -12,7 +12,7 @@ export default function Careers() {
 
   return (
     <>
-        <GlobeLanding />
+        <CareerListing />
     </>
     
   );

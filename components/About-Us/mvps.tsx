@@ -102,6 +102,11 @@ const LeadDevelopers = [{
     name: "Chris Sean",
     designation: "Lead Frontend Developer",
     image: "/Employees/developers/lead-dev-6-alt.jpeg"
+}, {
+    id: 7,
+    name: "Evan Williams",
+    designation: "Lead Cloud Developer",
+    image: "/Employees/developers/lead-dev-7.jpg"
 }];
 
 export default function MostValuablePeople() {
