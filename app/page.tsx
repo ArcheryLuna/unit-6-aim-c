@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <main>
-        <SparklesHero/>
+       <SparklesHero/>
         <div className="py-6 px-6 lg:px-12 lg:py-12 dark:bg-[#191919] bg-[#dfe9e9] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex">
           <div className="relative z-10 w-screen ">
             <ShowNotTell/>
