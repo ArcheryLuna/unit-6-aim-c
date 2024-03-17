@@ -56,7 +56,7 @@ function HandleApply(e: any) {
                 <CardContent>
                 <ul>
                 {
-                    listings.map((listing, index) => (
+                    listings.map((listing) => (
                             <li key={listing.listingId} className="my-2 ">
                                 <Card onClick={() => setCurrentListing(listing)}>
                                     <CardHeader>

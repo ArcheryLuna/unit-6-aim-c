@@ -1,7 +1,5 @@
 import { Metadata } from "next";
-import dynamic from "next/dynamic";
-
-const CareerListing = dynamic(() => import('@/components/careers/careers-listings'), { ssr: false });
+import CareerListing from "@/components/careers/careers-listings";
 
 export const metadata: Metadata = {
   title: "Hot Beans | Careers",

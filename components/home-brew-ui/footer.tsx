@@ -82,7 +82,6 @@ export default function NavigationBar() {
                             <Separator className="my-2 bg-[#191919] dark:bg-[#dfe9e9]"/>
                             <ul className="mt-2">
                                 <MenuItem href="https://github.com/ArcheryLuna/unit-6-aim-c.git" text="Frontend Github" uniqueId="FrontEndGithubFooter" />
-                                <MenuItem href="https://github.com/ArcheryLuna/cwc-unit6-backend.git" text="Backend Github" uniqueId="BackEndGithubFooter"  />
                                 <MenuItem href="/resources" text="Resources" uniqueId="ResourcesAgainFooter" />
                             </ul>
                         </div>
