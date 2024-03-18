@@ -16,7 +16,7 @@ import { toast } from "sonner";
 
 export default function ContactForm() {
 
-    function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    function handleSubmit(e: any) {
         e.preventDefault();
 
         const FirstName = document.getElementById("FirstName") as HTMLInputElement;
@@ -75,7 +75,7 @@ export default function ContactForm() {
                     </div>
                     <Separator />
                     <div className="mt-2 lg:mt-4">
-                        <Button className="w-full text-[#dfe9e9] font-semibold dark:text-[#191919]"><FontAwesomeIcon icon={faPaperPlane} className="mr-1"/> Send</Button>
+                        <Button onClick={handleSubmit} className="w-full text-[#dfe9e9] font-semibold dark:text-[#191919]"><FontAwesomeIcon icon={faPaperPlane} className="mr-1"/> Send</Button>
                     </div>
                 </form>
             </CardContent>
